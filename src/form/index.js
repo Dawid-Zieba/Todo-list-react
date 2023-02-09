@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
-const Form = (props) =>(
+const Form = () =>(
     <form className="form">
-    <input autofocus className="form__input" name="task" placeholder="Co jest do zrobienia?"/>
+    <input className="form__input" name="task" placeholder="Co jest do zrobienia?"/>
     <button className="form__button">Dodaj zadanie</button>
 </form>
 );
