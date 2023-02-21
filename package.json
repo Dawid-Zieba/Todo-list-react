@@ -2,7 +2,7 @@
   "name": "todo-list-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dawid-zieba.github.io/todo-list-react/",
+  "homepage": "https://dawid-zieba.github.io/Todo-list-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
