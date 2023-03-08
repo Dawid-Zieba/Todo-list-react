@@ -40,7 +40,7 @@ export const Button = styled.button`
     ${({toggleDone}) =>toggleDone && css`
     background: hsl(120, 100%, 30%);
 
-    &hover: {
+    &:hover {
         background: hsl(120, 61%, 39%);
     }
     `}
@@ -48,7 +48,7 @@ export const Button = styled.button`
     ${({remove}) =>remove && css`
     background: hsl(348, 83%, 47%);
 
-    &hover: {
+    &:hover {
         background: hsl(0, 27%, 31%);
     }
     `}
