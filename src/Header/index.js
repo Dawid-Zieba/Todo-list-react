@@ -1,10 +1,10 @@
 import React from "react";
-import {StyledHeader} from "./styled";
+import { StyledHeader } from "./styled";
 
-const Header =({title})=> (
+const Header =({ title })=> (
    
         <StyledHeader>
-          {title}
+          { title }
           </StyledHeader>
  
 );

@@ -3,7 +3,6 @@ import { Box, BoxButtons } from "./styled";
 
 
 const Buttons = ({ tasks, hideDone, toggleHideDone, setAllDone }) => (
-
     <Box>
         {tasks.length > 0 && (
             <React.Fragment>

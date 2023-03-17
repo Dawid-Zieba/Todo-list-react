@@ -18,7 +18,7 @@ const Form = ({ addNewTask }) => {
     };
     return (
         <StyledForm onSubmit={onFormSubmit}>
-            <input
+            <Input
                 type="text"
                 ref={inputRef}
                 value={newTaskContent}
