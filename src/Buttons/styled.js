@@ -13,17 +13,14 @@ export const BoxButtons = styled.button`
     font-size: 15px;
     transition: 1s;
     margin-right: 10px;
-
     @media (max-width:${({theme}) => theme.breakpoint.mobileMax}px) {
         flex-basis: 100%;
         margin: 10px; 
     }
-
     &:hover {
         color: ${({theme}) => theme.color.bondiBlue};
     }
     &:disabled {
         color: ${({theme}) => theme.color.silver};
     }
-
 `;

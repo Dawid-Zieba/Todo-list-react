@@ -13,7 +13,6 @@ export const Item = styled.li`
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #ddd;
-
     ${({ hidden }) => hidden && css`
     display: none;
     `} 
@@ -36,18 +35,14 @@ export const Button = styled.button`
     font-size: 20px;
     color: white;
     transition: background 1s;
-
     ${({toggleDone}) =>toggleDone && css`
     background: hsl(120, 100%, 30%);
-
     &:hover {
         background: hsl(120, 61%, 39%);
     }
     `}
-
     ${({remove}) =>remove && css`
     background: hsl(348, 83%, 47%);
-
     &:hover {
         background: hsl(0, 27%, 31%);
     }

@@ -14,7 +14,6 @@ grid-gap: 20px;
 justify-content: space-between;
 align-items: center;
 padding: 10px;
-
 @media(max-width: ${({theme}) => theme.breakpoint.mobileMax}px) {
     grid-template-columns: 1fr;
 }
