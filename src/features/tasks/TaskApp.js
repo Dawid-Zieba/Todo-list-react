@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from "react-redux";
 import Form from "./Form";
 import Tasks from "./Tasks";
 import Buttons from "./Buttons";
@@ -7,81 +8,25 @@ import Header from "../../common/Header";
 import Container from "../../common/Container";
 
 
+
+
 function TaskApp() {
-  const [hideDone, setHideDone] = useState(false);
-
-  const tasksFromLocalStorage = localStorage.getItem("tasks")
-  const [tasks, setTasks] = useState(
-    tasksFromLocalStorage
-      ? JSON.parse(tasksFromLocalStorage)
-      : []
-  );
-
-  useEffect(() => {
-    localStorage.setItem("tasks",JSON.stringify(tasks));
-  },[tasks]);
-
-  const toggleHideDone = () => {
-    setHideDone(hideDone => !hideDone);
-  };
-
-  const removeTask = (id) => {
-    setTasks(tasks => tasks.filter(task => task.id !== id));
-  };
-
-  const toggleTaskDone = (id) => {
-    setTasks(tasks => tasks.map(task => {
-      if (task.id === id) {
-        return { ...task, done: !task.done };
-      }
-
-      return task;
-    }));
-  }
-
-  const setAllDone = () => {
-    setTasks(tasks => tasks.map(task => ({
-      ...task,
-      done: true,
-    })));
-  };
-
-  const addNewTask = (content) => {
-    setTasks(tasks => [
-      ...tasks,
-      {
-        content,
-        done: false,
-        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
-      },
-    ]);
-  };
 
   return (
     <Container>
       <Header title="Lista zadań" />
       <Section
         title="Dodaj nowe zadanie"
-        body={<Form addNewTask={addNewTask} />}
+        body={<Form />}
       />
 
       <Section
         title="Lista zadań"
         body=
-        {<Tasks
-          tasks={tasks}
-          hideDone={hideDone}
-          removeTask={removeTask}
-          toggleTaskDone={toggleTaskDone}
-        />
+        {<Tasks />
         }
         extraHeaderContent=
-        {<Buttons
-          tasks={tasks}
-          hideDone={hideDone}
-          toggleHideDone={toggleHideDone}
-          setAllDone={setAllDone}
-        />
+        {<Buttons />
         }
       />
     </Container>
