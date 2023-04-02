@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectTasks, toggleHideDone, setAllDone } from "../tasksSlice";
+import { selectTasks, toggleHideDone, setAllDone,fetchExampleTasks } from "../tasksSlice";
 import { Box, BoxButtons } from "./styled";
 
 
@@ -9,6 +9,9 @@ const Buttons = () => {
     const dispatch = useDispatch();
     return (
         <Box>
+            <BoxButtons onClick={() => dispatch(fetchExampleTasks())}>
+                Pobierz przykładowe zadania
+            </BoxButtons>
             {tasks.length > 0 && (
                 <React.Fragment>
                     <BoxButtons
