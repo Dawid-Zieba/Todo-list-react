@@ -10,6 +10,9 @@ It's a very simple aplication. It's a list of tasks you need to complete or thin
 - Babel
 - create-react-app
 - React
+- Redux Toolkit
+- Custom Hook
+- Styled-components
 ## Demo of the program
 https://dawid-zieba.github.io/Todo-list-react/
 # More information
