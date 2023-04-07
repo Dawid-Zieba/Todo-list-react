@@ -6,16 +6,12 @@ export const Nav = styled.nav`
 `;
 
 export const List = styled.ul`
-    list-style-type: none;
     display: flex;
     justify-content: center;
-    align-items: center;
+    list-style: none;
     padding: 10px;
-    margin: 0;
-    @media (max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
-      flex-direction: column;
-      align-items: center;
-    }
+    margin: 0px;
+    
 `;
 
 export const Item = styled.li`
