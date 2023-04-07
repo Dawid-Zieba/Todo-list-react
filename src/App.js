@@ -3,12 +3,11 @@ import { Switch, Route, HashRouter, Redirect } from "react-router-dom";
 import TasksPage from "./features/tasks/TasksPage";
 import TaskPage from "./features/tasks/TaskPage";
 import AuthorPage from "./features/author/AuthorPage";
-import { StyledNavLink } from "./styled";
 import { toAuthor, toTask, toTasks } from "./routes";
 import Navigation from "./Navigation";
 
 
-export default () => (
+const App = () => (
   <HashRouter>
     <Navigation />
 
@@ -28,3 +27,5 @@ export default () => (
     </Switch>
   </HashRouter>
 );
+
+export default App;
