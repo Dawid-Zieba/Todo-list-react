@@ -1,24 +1,18 @@
 import React from "react";
 import Input from "../Input";
-import { useLocation, useHistory } from "react-router-dom";
 import { StyledForm } from "./styled";
 import searchQueryParamName from "../TasksPage/searchQueryParamName";
+import { useQueryParameter, useReplaceQueryParameter, } from "../TasksPage/queryParameters";
 
-export default () => {
-    const location = useLocation();
-    const history = useHistory();
-    const query = (new URLSearchParams(location.search)).get(searchQueryParamName);
+const Search = () => {
+    const query = useQueryParameter(searchQueryParamName);
+    const replaceQueryParameter = useReplaceQueryParameter();
 
     const onInputChange = ({ target }) => {
-        const searchParams = new URLSearchParams(location.search);
-
-        if (target.value.trim() === "") {
-            searchParams.delete(searchQueryParamName);
-        } else {
-            searchParams.set(searchQueryParamName, target.value);
-        }
-
-        history.push(`${location.pathname}?${searchParams.toString()}`)
+        replaceQueryParameter({
+            key: searchQueryParamName,
+            value: target.value.trim() !=="" ? target.value : undefined,
+        })
     };
 
     return (
@@ -31,3 +25,5 @@ export default () => {
         </StyledForm>
     );
 };
+
+export default Search;
