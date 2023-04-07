@@ -3,20 +3,20 @@ import { toAuthor, toTasks } from "../routes";
 import { List, Item, StyledNavLink, Nav } from "./styled";
 
 const Navigation = () => (
-    <Nav>
-      <List>
-        <Item>
-          <StyledNavLink to={toTasks()}>
-            Zadania
-            </StyledNavLink>
-        </Item>
-        <Item>
-          <StyledNavLink to={toAuthor()}>
-            O autorze
-            </StyledNavLink>
-        </Item>
-      </List>
-      </Nav>
-      );
+  <Nav>
+    <List>
+      <Item>
+        <StyledNavLink to={toTasks()}>
+          Zadania
+        </StyledNavLink>
+      </Item>
+      <Item>
+        <StyledNavLink to={toAuthor()}>
+          O autorze
+        </StyledNavLink>
+      </Item>
+    </List>
+  </Nav>
+);
 
-      export default Navigation
+export default Navigation

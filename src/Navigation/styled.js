@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     background-color: ${({ theme }) => theme.color.teal};
+    margin: 0;
+    padding: 0;
 `;
 
 export const List = styled.ul`
@@ -11,7 +13,6 @@ export const List = styled.ul`
     list-style: none;
     padding: 10px;
     margin: 0px;
-    
 `;
 
 export const Item = styled.li`
@@ -27,5 +28,5 @@ export const StyledNavLink = styled(NavLink)`
     }
     &:hover {
       border-bottom: 1px solid;
-    }
+    };
 `;
