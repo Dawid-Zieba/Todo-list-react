@@ -48,3 +48,12 @@ export const Button = styled.button`
     }
     `}
 `;
+
+export const StyledLink =styled.link`
+color: ${({ theme }) => theme.color.teal};
+text-decoration: none;
+
+&:hover {
+    text-decoration: underline;
+}
+`
