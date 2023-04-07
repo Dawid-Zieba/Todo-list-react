@@ -3,16 +3,18 @@ It's a very simple aplication. It's a list of tasks you need to complete or thin
 ![Todo-List](https://user-images.githubusercontent.com/121859805/230620069-c1cf160b-37eb-4eae-b0f0-cf09c9af80a7.gif)
 
 ## Technologies used in this project:
-- HTML
-- CSS
-- JavaScript
-- BEM
-- Babel
+- HTML 5
+- CSS(Grid,Flex)
+- JavaScript ES6+
 - create-react-app
 - React
 - Redux Toolkit
-- Custom Hook
+-Redux-Saga
+-Redux-Router
+-React Hooks( useState, useRef)
+- Custom Hooks
 - Styled-components
+-Local storage
 ## Demo of the program
 https://dawid-zieba.github.io/Todo-list-react/
 # More information
