@@ -1,6 +1,6 @@
 # Tasks-List
 It's a very simple aplication. It's a list of tasks you need to complete or things that you want to do. You can mark them if if you've done and removed them.
-![Animation-echange](https://user-images.githubusercontent.com/121859805/214298798-6d71907b-d871-438f-a741-de1841ef2737.gif)
+![Todo-List](https://user-images.githubusercontent.com/121859805/230620069-c1cf160b-37eb-4eae-b0f0-cf09c9af80a7.gif)
 
 ## Technologies used in this project:
 - HTML
